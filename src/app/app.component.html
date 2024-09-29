@@ -1,0 +1,51 @@
+<div class="row">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">Staj II</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="todo">ToDo</a>
+          </li>
+      <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="ozlusoz">ozlusoz</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="vke">vke</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  outline active" aria-current="page" routerLink="Weather">Weather</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="register" *ngIf="!authSerice.isAuthenticated">Kayıt Ol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="login" *ngIf="!authSerice.isAuthenticated">Giris Yap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="cursor:pointer" (click)="signOut()" *ngIf="authSerice.isAuthenticated">Çıkış Yap</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+<div class="col-md-12">
+  <router-outlet></router-outlet>
+
+</div>
+

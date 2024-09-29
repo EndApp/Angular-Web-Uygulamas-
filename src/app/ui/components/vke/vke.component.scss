@@ -1,0 +1,23 @@
+.button-container {
+  display: flex;
+  gap: 1rem; /* Butonlar arasındaki boşluk */
+  margin-bottom: 1rem; /* Butonların altındaki boşluk */
+}
+
+.card-container {
+  gap: 1rem; /* Kartlar arasındaki boşluk */
+}
+
+.p-card {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px; /* Köşeleri yuvarlama */
+}
+
+.p-field {
+  margin-bottom: 1rem; /* Alanlar arasındaki boşluk */
+}
+
+.p-mb-2 {
+  margin-bottom: 1rem; /* Kartlar arasındaki boşluk */
+}

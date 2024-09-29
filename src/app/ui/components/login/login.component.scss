@@ -1,0 +1,25 @@
+/* Add this to your component's SCSS file */
+.p-card {
+  max-width: 400px; /* Adjust as needed */
+  margin: auto;
+}
+
+.p-field {
+  margin-bottom: 1rem;
+}
+
+.p-mt-3 {
+  margin-top: 1rem;
+}
+
+.p-d-flex {
+  display: flex;
+}
+
+.p-jc-between {
+  justify-content: space-between;
+}
+
+.p-inputtext-sm, .p-password-sm {
+  width: 100%; /* Make sure input fields take full width */
+}

@@ -1,0 +1,15 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>description </th>
+      <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+    </ng-container>
+    <ng-container matColumnDef="delete" >
+      <th mat-header-cell *matHeaderCellDef>delete </th>
+      <td [id]="element.id" mat-cell *matCellDef="let element" appDelete>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

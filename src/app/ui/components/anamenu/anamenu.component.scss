@@ -1,0 +1,21 @@
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #0056b3;
+}

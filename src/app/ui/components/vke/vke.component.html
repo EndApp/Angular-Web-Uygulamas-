@@ -1,0 +1,54 @@
+
+<p-card header="Vücut Kitle Endeksi Hesaplama" class="p-5">
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="Boy">Boy (Cm)</label>
+      <p-inputNumber
+        [(ngModel)]="boy"
+        id="Boy"
+        [min]="0"
+        mode="decimal"
+        [showButtons]="true"
+        class="p-d-block"
+      ></p-inputNumber>
+    </div>
+
+    <div class="p-field">
+      <label for="Kilo">Kilo (kg)</label>
+      <p-inputNumber
+        [(ngModel)]="kilo"
+        id="Kilo"
+        [min]="0"
+        mode="decimal"
+        [showButtons]="true"
+        class="p-d-block"
+      ></p-inputNumber>
+    </div>
+
+    <div class="button-container">
+      <p-button label="Hesapla" icon="pi pi-check" (click)="hesapla()" class="p-button-success"></p-button>
+      <p-button label="Reset" icon="pi pi-refresh" (click)="reset()" class="p-button-danger"></p-button>
+    </div>
+
+    <p class="p-mt-3">{{ sonuc }}</p>
+  </div>
+
+  <div class="card-container p-d-flex p-flex-wrap p-jc-evenly p-mt-4">
+    <div class="p-card p-mb-2" style="border-style:dashed; border-width:4px; border-color: green;">
+      <p>Under Weight</p>
+      <p>-18.5</p>
+    </div>
+    <div class="p-card p-mb-2" style="border-style:dashed; border-width:4px; border-color: rgb(47, 0, 255);">
+      <p>18.5-25</p>
+      <p>Normal</p>
+    </div>
+    <div class="p-card p-mb-2" style="border-style:dashed; border-width:4px; border-color: rgb(255, 251, 0);">
+      <p>25-30</p>
+      <p>Over Weight</p>
+    </div>
+    <div class="p-card p-mb-2" style="border-style:dashed; border-width:4px; border-color: red;">
+      <p>30-</p>
+      <p>Obese</p>
+    </div>
+  </div>
+</p-card>
